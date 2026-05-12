@@ -1,0 +1,102 @@
+/* Etiquetas de Rol Dinámicas */
+.rol-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* Estilo para el Administrador (Rosa Remodela-IA) */
+.rol-tag.admin {
+  background-color: rgba(236, 72, 153, 0.15);
+  color: #f472b6;
+  border: 1px solid rgba(236, 72, 153, 0.4);
+}
+
+/* Estilo para el Cliente (Azul Técnico) */
+.rol-tag.cliente {
+  background-color: rgba(59, 130, 246, 0.15);
+  color: #60a5fa;
+  border: 1px solid rgba(59, 130, 246, 0.4);
+}
+
+/* Ajustes específicos para la tabla de usuarios */
+.admin-table td strong {
+  color: #f8fafc;
+  font-weight: 500;
+}
+
+/* Efecto Hover en las filas para mejorar la lectura */
+.admin-table tbody tr:hover {
+  background-color: rgba(51, 65, 85, 0.3);
+  transition: background-color 0.2s ease;
+}
+
+/* Estilo para correos y teléfonos (secundarios) */
+.admin-table td:nth-child(2),
+.admin-table td:nth-child(3) {
+  color: #94a3b8;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+}
+
+/* Encabezado del Modal de Usuario */
+.modal-header p {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+/* --- BOTÓN AÑADIR USUARIO (CORREGIDO) --- */
+.header-actions .btn-add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Tamaño y forma */
+  width: 45px;
+  height: 45px;
+  padding: 0; 
+  border-radius: 12px; /* Redondeado moderno, similar a tus tarjetas */
+  
+  /* Tipografía del "+" */
+  font-size: 1.8rem; 
+  font-weight: 300; /* Un "+" más delgado se ve más elegante */
+  line-height: 1;
+  
+  /* Colores Remodela-IA */
+  background: linear-gradient(135deg, #ec4899 0%, #be185d 100%);
+  color: white;
+  border: none;
+  
+  /* Sombras y efectos */
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(236, 72, 153, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-actions .btn-add:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(236, 72, 153, 0.5);
+  background: linear-gradient(135deg, #f472b6 0%, #ec4899 100%);
+}
+
+.header-actions .btn-add:active {
+  transform: scale(0.95);
+}
+
+/* Ajuste para el contenedor del botón si es necesario */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+
+
+.titulo {
+  color: #ec4899 ;
+}

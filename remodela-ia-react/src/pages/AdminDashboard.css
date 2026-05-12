@@ -1,0 +1,177 @@
+.admin-container {
+    display: flex;
+    height: 100vh;
+    background: #0b0f1a;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.admin-sidebar {
+    width: 280px;
+    background: #151b2d;
+    border-right: 1px solid #2d3748;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.admin-logo h2 {
+    color: #f472b6; /* Rosa Neón */
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+}
+
+.admin-tag {
+    background: rgba(244, 114, 182, 0.1);
+    color: #f472b6;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.admin-menu {
+    margin-top: 3rem;
+    flex-grow: 1;
+}
+
+.admin-menu button {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: #94a3b8;
+    padding: 1rem;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    transition: 0.3s;
+}
+
+.admin-menu button.active {
+    background: #f472b6;
+    color: white;
+    box-shadow: 0 4px 15px rgba(244, 114, 182, 0.3);
+}
+
+.admin-content {
+    flex-grow: 1;
+    padding: 3rem;
+    overflow-y: auto;
+}
+
+.mini-card {
+    background: #1e293b;
+    padding: 1.5rem;
+    border-radius: 15px;
+    border: 1px solid #334155;
+    min-width: 180px;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.admin-table th {
+    text-align: left;
+    padding: 1rem;
+    color: #64748b;
+}
+
+.admin-table td {
+    background: #1e293b;
+    padding: 1rem;
+}
+
+.admin-table tr td:first-child { border-radius: 10px 0 0 10px; }
+.admin-table tr td:last-child { border-radius: 0 10px 10px 0; }
+
+.rol-badge {
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.rol-badge.admin {
+    background: rgba(244, 114, 182, 0.2);
+    color: #f472b6; /* Rosa Neón */
+    border: 1px solid #f472b6;
+}
+
+.rol-badge.cliente {
+    background: rgba(56, 189, 248, 0.2);
+    color: #38bdf8; /* Azul */
+    border: 1px solid #38bdf8;
+}
+
+.btn-action {
+    background: #334155;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: 0.3s;
+}
+
+.btn-action.edit:hover { background: #0ea5e9; }
+.btn-action.delete:hover { background: #ef4444; }
+
+.table-responsive {
+    background: #1e293b;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Filtros */
+.filter-bar {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: #1e293b;
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+.admin-select {
+    background: #0b0f1a;
+    color: white;
+    border: 1px solid #334155;
+    padding: 8px 15px;
+    border-radius: 8px;
+    outline: none;
+}
+
+.status-pill {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.status-pill.pendiente { background: #fbbf24; color: #000; }
+.status-pill.en_revision { background: #3b82f6; color: #fff; }
+.status-pill.completado { background: #10b981; color: #fff; }
+
+.action-select {
+  background: #1e293b;
+  color: #fff;
+  border: 1px solid #334155;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.text-success {
+  color: #6ee7b7;
+  font-weight: bold;
+}
+

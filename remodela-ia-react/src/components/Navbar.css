@@ -1,0 +1,120 @@
+.navbar {
+  /* 1. CAMBIO CLAVE: De fixed a absolute */
+  position: absolute; 
+  
+  /* 2. Mantenemos el estilo de "Isla" */
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  /* 3. Dimensiones */
+  width: 90%;
+  max-width: 1200px;
+  height: 70px;
+  
+  /* 4. Diseño visual (Azul Arturo Rojas) */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  background-color: #1E3A5F;
+  border-radius: 15px;
+  z-index: 1000;
+  
+  /* 5. Estética */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.main-content {
+  padding-top: 110px; /* Suficiente espacio para no chocar con la barra */
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--blanco) !important; /* Forza el color blanco */
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 10px; /* Reducimos el gap para que el sombreado tenga espacio */
+  align-items: center;
+}
+
+.nav-links li {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  padding: 8px 16px; /* Espacio interno para que el sombreado se vea bien */
+  border-radius: 8px; /* Bordes redondeados para el resaltado */
+  transition: all 0.3s ease; /* Animación suave para el color y la sombra */
+}
+
+.nav-links li:hover {
+  color: #ffffff; /* El texto se pone blanco total */
+  background-color: rgba(255, 255, 255, 0.1); /* Un fondo blanco muy transparente */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombreado sutil para dar profundidad */
+  transform: translateY(-2px); /* Pequeño salto hacia arriba para que "sobresalga" */
+}
+
+.nav-links li.active {
+  color: #F97316; /* Naranja corporativo */
+  background-color: rgba(249, 115, 22, 0.1); /* Fondo naranja muy suave */
+  font-weight: 700;
+  box-shadow: inset 0 0 0 1px rgba(249, 115, 22, 0.2); /* Un borde interno fino */
+}
+
+.btn-salir-nav {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--blanco) !important;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-whatsapp {
+  background: #22c55e;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.user-nav-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-name-nav {
+  color: #1E3A5F; /* El azul de tu marca */
+  font-size: 0.9rem;
+}
+
+.user-name-nav strong {
+  color: #F97316; /* El naranja de Arturo Rojas */
+  text-transform: capitalize;
+}

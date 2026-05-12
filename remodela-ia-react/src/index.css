@@ -1,0 +1,62 @@
+:root {
+  /* COLORES CORPORATIVOS ARTURO ROJAS */
+  --azul-ar: #1E3A5F;
+  --azul-oscuro: #0f172a;
+  --naranja-ar: #F97316;
+  --naranja-hover: #ea580c;
+  
+  /* COLORES DE INTERFAZ */
+  --text: #475569;
+  --text-h: #1E3A5F;
+  --bg: #ffffff;
+  --bg-suave: #f1f5f9;
+  --border: #e2e8f0;
+  --white: #ffffff;
+  
+  --shadow-lg: 0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+  /* TIPOGRAFÍA */
+  --sans: 'Inter', system-ui, -apple-system, sans-serif;
+  
+  font-family: var(--sans);
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden; /* Evita que la web baile hacia los lados */
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3 {
+  color: var(--text-h);
+  margin: 0;
+}
+
+.h1-dineña {
+  color: var(--white);
+}
+
+.text-orange {
+  color: var(--naranja-ar);
+}
+
+.subtitle {
+  color: var(--naranja-ar);
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 8px;
+}

@@ -1,0 +1,110 @@
+/* UserForm.css */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.admin-modal {
+    background: #1e293b;
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+    border-radius: 20px;
+    border: 1px solid #334155;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.modal-header h2 {
+    color: #f472b6; /* Rosa neón */
+    margin-bottom: 0.5rem;
+}
+
+.modal-subtitle {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+/* --- CORRECCIÓN DE VISIBILIDAD DE TEXTO --- */
+.modal-form .form-group {
+    margin-bottom: 1.2rem;
+}
+
+.modal-form label {
+    display: block;
+    color: #cbd5e1;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+}
+
+.modal-form input,
+.modal-form select {
+    width: 100%;
+    background: #0f172a !important; /* Fondo oscuro */
+    color: #ffffff !important;      /* TEXTO BLANCO PARA MARIANA/MELISSA */
+    border: 1px solid #334155;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.modal-form input:focus {
+    border-color: #f472b6;
+}
+
+.modal-form input:disabled {
+    background: #1e293b !important;
+    color: #64748b !important;
+    cursor: not-allowed;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+/* --- BOTONES DEL MODAL --- */
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.btn-cancel {
+    background: transparent;
+    color: #94a3b8;
+    border: 1px solid #334155;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-save {
+    background: #f472b6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-save:hover {
+    background: #db2777;
+    box-shadow: 0 0 15px rgba(244, 114, 182, 0.4);
+}

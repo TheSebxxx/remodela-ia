@@ -1,0 +1,203 @@
+.conocenos-section {
+  padding: 80px 8%;
+  background-color: #ffffff;
+}
+
+.conocenos-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.conocenos-header h2 {
+  font-size: 36px;
+  color: var(--azul-ar);
+  margin-top: 10px;
+}
+
+.text-orange { color: var(--naranja-ar); }
+
+.testimonios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.testimonio-card {
+  background: #f8fafc;
+  padding: 40px 30px;
+  border-radius: 20px;
+  position: relative;
+  transition: 0.3s;
+  border: 1px solid #e2e8f0;
+}
+
+.testimonio-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 30px rgba(0,0,0,0.05);
+  border-color: var(--naranja-ar);
+}
+
+.quote-icon {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 60px;
+  color: var(--naranja-ar);
+  opacity: 0.2;
+  font-family: serif;
+}
+
+.estrellas {
+  color: #fbbf24; /* Color oro/amarillo */
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.comentario {
+  font-style: italic;
+  color: #475569;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.cliente-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.avatar-fake {
+  width: 45px;
+  height: 45px;
+  background-color: var(--azul-ar);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.cliente-info strong {
+  display: block;
+  color: var(--azul-ar);
+}
+
+.cliente-info span {
+  font-size: 13px;
+  color: #64748b;
+}
+
+/* Cifras de impacto */
+.cifras-experiencia {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--azul-ar);
+  padding: 50px;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+}
+
+.cifra-item h3 {
+  font-size: 40px;
+  color: var(--naranja-ar);
+  margin-bottom: 5px;
+}
+
+.cifra-item p {
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+
+/* --- SECCIÓN SERVICIOS (TARJETAS) --- */
+.services-section {
+  padding: 80px 8%;
+  background-color: #f8fafc;
+  text-align: center;
+}
+
+.services-header h2 {
+  font-size: 36px;
+  color: #1E3A5F;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.services-subtitle {
+  color: #F97316;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden; /* Corta la imagen en las esquinas redondeadas */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.service-content {
+  padding: 25px;
+  position: relative;
+}
+
+.service-icon-box {
+  width: 45px;
+  height: 45px;
+  background: #f1f5f9;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.service-content h3 {
+  font-size: 20px;
+  color: #1E3A5F;
+  margin-bottom: 12px;
+}
+
+.service-content p {
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.ver-mas-link {
+  color: #F97316;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.ver-mas-link:hover {
+  text-decoration: underline;
+}

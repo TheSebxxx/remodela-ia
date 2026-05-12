@@ -1,0 +1,26 @@
+# --- Dependencias (No subir a Git) ---
+node_modules/
+backend/node_modules/
+remodela-ia-react/node_modules/
+
+# --- Variables de Entorno (CRÍTICO: No subir nunca) ---
+.env
+backend/.env
+remodela-ia-react/.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# --- Compilaciones y Salidas ---
+dist/
+remodela-ia-react/dist/
+build/
+remodela-ia-react/build/
+*.log
+
+# --- Archivos del Sistema y Editores ---
+.DS_Store
+.vscode/
+.idea/
+Thumbs.db

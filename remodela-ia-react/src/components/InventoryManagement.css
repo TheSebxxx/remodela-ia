@@ -1,0 +1,145 @@
+/* Contenedor principal con efecto de entrada */
+.view-fade {
+  animation: fadeIn 0.5s ease-in-out;
+  padding: 20px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Encabezado de la sección */
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.header-actions {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+/* Estilo para el selector de categorías */
+.admin-select {
+  background-color: #1e293b;
+  color: white;
+  border: 1px solid #334155;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Botón de Añadir Nuevo Material */
+.btn-add {
+  background-color: #ec4899; /* Rosa de Remodela-IA */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-add:hover {
+  background-color: #be185d;
+}
+
+/* Tabla Administrativa */
+.table-container {
+  background-color: #1e293b;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #e2e8f0;
+  text-align: left;
+}
+
+.admin-table th {
+  background-color: #0f172a;
+  padding: 15px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #94a3b8;
+}
+
+.admin-table td {
+  padding: 15px;
+  border-bottom: 1px solid #334155;
+}
+
+/* Indicadores de Stock */
+.stock-badge-table {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  min-width: 80px;
+  text-align: center;
+}
+
+.stock-badge-table.low {
+  background-color: rgba(239, 68, 68, 0.2); /* Rojo suave */
+  color: #f87171;
+  border: 1px solid #ef4444;
+}
+
+.stock-badge-table.ok {
+  background-color: rgba(16, 185, 129, 0.2); /* Verde suave */
+  color: #34d399;
+  border: 1px solid #10b981;
+}
+
+/* Etiquetas de Categoría */
+.cat-tag {
+  background-color: #334155;
+  color: #cbd5e1;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+/* Botones de Acción */
+.actions-cell {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-edit, .btn-delete {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: 0.2s;
+}
+
+.btn-edit {
+  background-color: #334155;
+  color: #f8fafc;
+}
+
+.btn-edit:hover {
+  background-color: #475569;
+}
+
+.btn-delete {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+}
+
+.btn-delete:hover {
+  background-color: #ef4444;
+  color: white;
+}

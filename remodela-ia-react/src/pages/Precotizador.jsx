@@ -19,7 +19,7 @@ export default function Precotizador({ setVista }) {
   useEffect(() => {
     const obtenerMateriales = async () => {
       try {
-        const res = await fetch('http://127.0.0.1:3000/api/materiales');
+        const res = await fetch('/api/materiales');
         if (!res.ok) throw new Error("Error en la respuesta");
         const data = await res.json();
         setMaterialesDB(data);
@@ -69,7 +69,7 @@ export default function Precotizador({ setVista }) {
       }
     };
     try {
-      const res = await fetch('http://127.0.0.1:3000/api/cotizaciones/guardar', {
+      const res = await fetch('/api/cotizaciones/guardar', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
@@ -136,7 +136,7 @@ export default function Precotizador({ setVista }) {
   const cargarHistorial = async () => {
     if (!usuario) return alert("Inicia sesión para ver tu historial.");
     try {
-      const res = await fetch(`http://127.0.0.1:3000/api/cotizaciones/historial/${usuario.id}`);
+      const res = await fetch(`/api/cotizaciones/historial/${usuario.id}`);
       const data = await res.json();
       setHistorial(data);
       setMostrarHistorial(!mostrarHistorial);

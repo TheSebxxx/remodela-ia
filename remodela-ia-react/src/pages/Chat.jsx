@@ -25,7 +25,7 @@ export default function Chat({ setVista }) {
     const obtenerHistorial = async () => {
       if (!usuario?.id) return;
       try {
-        const res = await fetch(`http://127.0.0.1:3000/api/chat/historial/${usuario.id}`);
+        const res = await fetch(`/api/chat/historial/${usuario.id}`);
         if (res.ok) {
           const data = await res.json();
           setHistorial(Array.isArray(data) ? data : []);
@@ -55,7 +55,7 @@ const cargarChatPasado = async (idChat) => {
     try {
       setChatIdActual(idChat);
       
-      const res = await fetch(`http://127.0.0.1:3000/api/chat/mensajes/${idChat}`);
+      const res = await fetch(`/api/chat/mensajes/${idChat}`);
       if (!res.ok) throw new Error("No se pudieron obtener los mensajes");
       
       const data = await res.json();
@@ -100,7 +100,7 @@ const cargarChatPasado = async (idChat) => {
     setEstaEnviando(true);
     setMensajes(prev => [...prev, { rol: 'user', texto: textoUsuario }]);
     try {
-      const res = await fetch('http://127.0.0.1:3000/api/chat', {
+      const res = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ 
@@ -114,7 +114,7 @@ const cargarChatPasado = async (idChat) => {
       setMensajes(prev => [...prev, { rol: 'ai', texto: data.respuesta }]);
       
       // Actualizamos el historial por si se generó un nuevo título
-      const resHist = await fetch(`http://127.0.0.1:3000/api/chat/historial/${usuario.id}`);
+      const resHist = await fetch(`/api/chat/historial/${usuario.id}`);
       const dataHist = await resHist.json();
       setHistorial(Array.isArray(dataHist) ? dataHist : []);
     } catch (error) {

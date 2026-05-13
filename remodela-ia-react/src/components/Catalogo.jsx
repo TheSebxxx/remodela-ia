@@ -17,7 +17,7 @@ export default function Catalogo() {
     setLoading(true);
     try {
       const query = new URLSearchParams(filtros).toString();
-      const res = await fetch(`http://127.0.0.1:3000/api/materiales?${query}`);
+      const res = await fetch(`/api/materiales?${query}`);
       const data = await res.json();
       setMateriales(data);
     } catch (error) {

@@ -24,7 +24,7 @@ export default function Contacto() {
     e.preventDefault();
     
     try {
-      const res = await fetch('http://localhost:3000/api/whatsapp', {
+      const res = await fetch('/api/whatsapp', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
